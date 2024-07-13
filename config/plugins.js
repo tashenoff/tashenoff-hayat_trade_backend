@@ -22,7 +22,7 @@ module.exports = ({ env }) => ({
       provider: 'strapi-provider-email-smtp',
       providerOptions: {
         host: 'smtp.mail.ru', //SMTP Host
-        port: 587   , //SMTP Port
+        port: 465   , //SMTP Port
         secure: true,
         username: 'this.alex@mail.ru',
         password: 'gU8aF1x92sbFqq1yWiAL',
