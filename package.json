@@ -1,0 +1,41 @@
+{
+  "name": "my-project",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "deploy": "strapi deploy"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.10.8",
+    "@creazy231/strapi-plugin-apollo-sandbox": "^0.0.15",
+    "@strapi/plugin-cloud": "4.25.2",
+    "@strapi/plugin-i18n": "4.25.2",
+    "@strapi/plugin-users-permissions": "4.25.2",
+    "@strapi/strapi": "4.25.2",
+    "better-sqlite3": "8.6.0",
+    "custom-slug": "^2.1.1",
+    "graphql": "^16.9.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "strapi-plugin-slugify": "^2.3.8",
+    "strapi-plugin-strapi-algolia": "^1.7.1",
+    "styled-components": "5.3.3"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "c3691df3-8f90-4c82-9df2-dacafd37c70b"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
