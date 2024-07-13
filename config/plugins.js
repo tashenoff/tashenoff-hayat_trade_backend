@@ -1,18 +1,7 @@
 'use strict';
 
 module.exports = ({ env }) => ({
-  // ...
-  'strapi-algolia': {
-    enabled: true,
-    config: {
-      apiKey: env('ALGOLIA_ADMIN_KEY'),
-      applicationId: env('ALGOLIA_APP_ID'),
-      contentTypes: [
-        { name: 'api::article.article' },
-        // ...
-      ],
-    },
-  },
+
 
   slugify: {
     enabled: true,
@@ -26,10 +15,30 @@ module.exports = ({ env }) => ({
     },
   },
 
-
+  "netlify-deployments": {
+    enabled: true,
+  },
   
 
-
+  email: {
+    config: {
+      provider: 'strapi-provider-email-smtp',
+      providerOptions: {
+        host: 'smtp.mail.ru', //SMTP Host
+        port: 587   , //SMTP Port
+        secure: true,
+        username: 'this.alex@mail.ru',
+        password: 'gU8aF1x92sbFqq1yWiAL',
+        rejectUnauthorized: true,
+        requireTLS: true,
+        connectionTimeout: 1,
+      },
+    },
+    settings: {
+      defaultFrom: 'this.alex@mail.ru',
+      defaultReplyTo: 'this.alex@mail.ru',
+    }, 
+  },    
 
 
 });
