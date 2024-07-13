@@ -15,10 +15,7 @@ module.exports = ({ env }) => ({
     },
   },
 
-  "netlify-deployments": {
-    enabled: true,
-  },
-  
+   
 
   email: {
     config: {
